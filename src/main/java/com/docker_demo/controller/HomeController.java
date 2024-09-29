@@ -9,11 +9,13 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String getMessage() {
+		System.out.println("Inside Root Controller");
 		return "Welcome for the First Coomit!!";
 	}
 	
 	@GetMapping("/hello")
 	public String getCustomizedMessage(@RequestParam(required = false) String name ) {
+		System.out.println("Inside Hello Controller");
 		return "Hello, "+handleNullString(name)+" Welcome !";
 	}
 	
