@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DockerDemoApplication {
 
 	public static void main(String[] args) {
+		//Staged Commit 2
 		SpringApplication.run(DockerDemoApplication.class, args);
 	}
 
